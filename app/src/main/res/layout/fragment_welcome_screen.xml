@@ -15,10 +15,16 @@
 
         <TextView
             android:id="@+id/textView"
+            style="@style/textStyle_welcomeScreen"
+            android:text="@string/vision" />
+
+        <Button
+            android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/vision" />
+            android:layout_gravity="center_horizontal"
+            android:text="@string/next"
+            android:textColor="@color/brown" />
 
     </LinearLayout>
 </layout>
