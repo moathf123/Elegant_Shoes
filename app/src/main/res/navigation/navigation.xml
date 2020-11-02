@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.example.elegantshoes.LoginFragment"
-        android:label="LoginFragment"
+        android:label="@string/app_name"
         tools:layout="@layout/fragment_login">
         <action
             android:id="@+id/action_loginFragment_to_welcomeScreenFragment"
@@ -17,6 +17,6 @@
     <fragment
         android:id="@+id/welcomeScreenFragment"
         android:name="com.example.elegantshoes.WelcomeScreenFragment"
-        android:label="WelcomeScreenFragment"
+        android:label="@string/app_name"
         tools:layout="@layout/fragment_welcome_screen" />
 </navigation>
