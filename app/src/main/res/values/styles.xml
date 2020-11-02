@@ -11,7 +11,7 @@
         <item name="android:textSize">@dimen/textSize_all</item>
     </style>
 
-    <style name="textStyle_welcomeScreen">
+    <style name="textStyle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">@dimen/textSize_all</item>

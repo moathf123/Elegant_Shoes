@@ -7,16 +7,17 @@
         android:layout_height="match_parent"
         android:layout_margin="@dimen/margin_all_16d"
         android:orientation="vertical"
-        tools:context=".WelcomeScreenFragment">
+        tools:context=".InstructionFragment">
 
         <TextView
             style="@style/textStyle"
-            android:text="@string/welcoming_text" />
+            android:text="TODO" />
+        <!-- TODO add instruction texts -->
 
         <TextView
             android:id="@+id/textView"
             style="@style/textStyle"
-            android:text="@string/vision" />
+            android:text="TODO" />
 
         <Button
             android:id="@+id/button"
@@ -27,4 +28,5 @@
             android:textColor="@color/brown" />
 
     </LinearLayout>
+
 </layout>
