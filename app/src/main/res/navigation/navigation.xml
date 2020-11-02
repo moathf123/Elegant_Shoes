@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navigation">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/loginFragment">
 
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.elegantshoes.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_welcomeScreenFragment"
+            app:destination="@id/welcomeScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeScreenFragment"
+        android:name="com.example.elegantshoes.WelcomeScreenFragment"
+        android:label="WelcomeScreenFragment"
+        tools:layout="@layout/fragment_welcome_screen" />
 </navigation>
