@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="login_label_style">
+        <item name="android:layout_marginStart">@dimen/margin_all_16d</item>
+        <item name="android:layout_marginEnd">@dimen/margin_all_16d</item>
+        <item name="android:layout_marginBottom">@dimen/margin_all_16d</item>
+        <item name="android:ems">10</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">@dimen/textSize_login</item>
+    </style>
+</resources>
