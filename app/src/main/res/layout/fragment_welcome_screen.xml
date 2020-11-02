@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_all_16d"
+        android:orientation="vertical"
+        tools:context=".WelcomeScreenFragment">
+
+        <TextView
+            style="@style/textStyle_welcomeScreen"
+            android:text="@string/welcoming_text" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/textStyle_welcomeScreen"
+            android:text="@string/vision" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/next"
+            android:textColor="@color/brown" />
+
+    </LinearLayout>
+</layout>

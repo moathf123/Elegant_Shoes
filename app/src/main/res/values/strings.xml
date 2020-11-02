@@ -1,9 +1,21 @@
 <resources>
     <string name="app_name">Elegant Shoes</string>
+
+    <!-- login layout -->
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="login_image">login image</string>
     <string name="login">Login</string>
     <string name="sign_up">Sign Up</string>
+
+    <!-- welcome screen layout -->
+    <string name="welcoming_text">We are welcoming you to our humble
+        store for elegant shoes, where we hope you will find the right
+        shoes for you
+    </string>
+    <string name="vision">our goal is to provide an elegant pair
+        of shoes for every customer
+    </string>
+    <string name="next">Next</string>
 
 </resources>

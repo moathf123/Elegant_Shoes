@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
 import com.example.elegantshoes.databinding.FragmentLoginBinding
 
 
@@ -25,7 +26,15 @@ class LoginFragment : Fragment() {
             false
         )
 
-        //TODO add login and sign up click events
+        binding.buttonLoginLogin.setOnClickListener {
+            it.findNavController()
+                .navigate(LoginFragmentDirections.actionLoginFragmentToWelcomeScreenFragment())
+        }
+
+        binding.buttonLoginSignUp.setOnClickListener {
+            it.findNavController()
+                .navigate(LoginFragmentDirections.actionLoginFragmentToWelcomeScreenFragment())
+        }
 
         return binding.root
     }
