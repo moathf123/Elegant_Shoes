@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
 import com.example.elegantshoes.databinding.FragmentWelcomeScreenBinding
 
 
@@ -24,7 +25,10 @@ class WelcomeScreenFragment : Fragment() {
             container,
             false
         )
-
+        binding.buttonWelcome.setOnClickListener {
+            it.findNavController()
+                .navigate(WelcomeScreenFragmentDirections.actionWelcomeScreenFragmentToInstructionFragment())
+        }
         return binding.root
     }
 

@@ -18,5 +18,14 @@
         android:id="@+id/welcomeScreenFragment"
         android:name="com.example.elegantshoes.WelcomeScreenFragment"
         android:label="@string/app_name"
-        tools:layout="@layout/fragment_welcome_screen" />
+        tools:layout="@layout/fragment_welcome_screen">
+        <action
+            android:id="@+id/action_welcomeScreenFragment_to_instructionFragment"
+            app:destination="@id/instructionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/instructionFragment"
+        android:name="com.example.elegantshoes.InstructionFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_instruction" />
 </navigation>
