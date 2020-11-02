@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="margin_all_16d">16dp</dimen>
-    <dimen name="textSize_login">24sp</dimen>
+    <dimen name="textSize_all">24sp</dimen>
     <dimen name="margin_login_labelsToButtons">92dp</dimen>
 </resources>
