@@ -3,6 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+
+        <variable
+            name="shoeViewModel"
+            type="com.example.elegantshoes.models.ShoeViewModel" />
+    </data>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -19,6 +26,7 @@
             android:id="@+id/editText_shoeDetail_name"
             style="@style/editText_shoeDetail"
             android:inputType="textPersonName"
+            android:text="@{shoeViewModel.name}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView_shoeDetail_nameLable"
             app:layout_constraintTop_toTopOf="parent" />
@@ -34,6 +42,7 @@
             android:id="@+id/editText_shoeDetail_company"
             style="@style/editText_shoeDetail"
             android:inputType="textPersonName"
+            android:text="@{shoeViewModel.company}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView3"
             app:layout_constraintTop_toBottomOf="@+id/editText_shoeDetail_name" />
@@ -49,6 +58,7 @@
             android:id="@+id/editText_shoeDetail_description"
             style="@style/editText_shoeDetail"
             android:inputType="textPersonName"
+            android:text="@{shoeViewModel.description}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView4"
             app:layout_constraintTop_toBottomOf="@+id/editText_shoeDetail_company" />

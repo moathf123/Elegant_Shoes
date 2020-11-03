@@ -35,7 +35,7 @@
     <fragment
         android:id="@+id/shoeListFragment"
         android:name="com.example.elegantshoes.models.ShoeListFragment"
-        android:label="ShoeListFragment"
+        android:label="@string/app_name"
         tools:layout="@layout/fragment_shoe_list">
         <action
             android:id="@+id/action_shoeListFragment_to_shoeDetailFragment"

@@ -7,11 +7,17 @@ import com.example.elegantshoes.R
 
 class ShoeViewModel : ViewModel() {
 
-    private lateinit var shoeList: MutableList<Shoe>
+    private val shoeList: MutableList<Shoe> = mutableListOf(
+        Shoe(
+            "First Shoes", 8.5, "TimberLand",
+            "oil resistance", R.drawable.android_shoes
+        )
+    )
 
     private val _name = MutableLiveData<String>()
     val name: LiveData<String>
         get() = _name
+
 
     private val _size = MutableLiveData<Double>()
     val size: LiveData<Double>
@@ -25,19 +31,12 @@ class ShoeViewModel : ViewModel() {
     val description: LiveData<String>
         get() = _description
 
-    private val _images = MutableLiveData<List<String>>()
-    val images: LiveData<List<String>>
-        get() = _images
-
     init {
 
+    }
 
-        shoeList = mutableListOf(
-            Shoe(
-                "First Shoes", 8.5, "TimberLand",
-                "oil resistance", R.drawable.
-            )
-        )
-
+    fun addNewShoes(name: String, size: Double, company: String, description: String) {
+        val shoe = Shoe(name, size, company, description, R.drawable.android_shoes)
+        shoeList.add(shoe)
     }
 }
