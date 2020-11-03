@@ -17,7 +17,12 @@
         of shoes for every customer
     </string>
     <string name="next">Next</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- shoes detail layout -->
+    <string name="shoes_size">shoes size:</string>
+    <string name="shoes_description">Shoes Description:</string>
+    <string name="shoes_company">Shoes company:</string>
+    <string name="shoes_name">Shoes Name:</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
 
 </resources>

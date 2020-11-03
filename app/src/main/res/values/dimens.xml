@@ -3,4 +3,5 @@
     <dimen name="margin_all_16d">16dp</dimen>
     <dimen name="textSize_all">24sp</dimen>
     <dimen name="margin_login_labelsToButtons">92dp</dimen>
+    <dimen name="textSize_shoeDetail">18sp</dimen>
 </resources>
