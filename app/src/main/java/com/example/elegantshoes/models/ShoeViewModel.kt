@@ -3,10 +3,11 @@ package com.example.elegantshoes.models
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.example.elegantshoes.R
 
 class ShoeViewModel : ViewModel() {
 
-    private lateinit var shoe: Shoe
+    private lateinit var shoeList: MutableList<Shoe>
 
     private val _name = MutableLiveData<String>()
     val name: LiveData<String>
@@ -29,9 +30,14 @@ class ShoeViewModel : ViewModel() {
         get() = _images
 
     init {
-        shoe.name = _name.value.toString()
-        shoe.size = _size.value!!
-        shoe.company = _company.value.toString()
+
+
+        shoeList = mutableListOf(
+            Shoe(
+                "First Shoes", 8.5, "TimberLand",
+                "oil resistance", R.drawable.
+            )
+        )
 
     }
 }
