@@ -1,9 +1,8 @@
 package com.example.elegantshoes.models
 
+import android.content.Intent
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
@@ -14,6 +13,7 @@ import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import com.example.elegantshoes.R
 import com.example.elegantshoes.databinding.FragmentShoeListBinding
+import kotlinx.coroutines.Dispatchers.Main
 import timber.log.Timber.i
 
 
@@ -51,6 +51,7 @@ class ShoeListFragment : Fragment() {
                 createItemList()
             }
         })
+        setHasOptionsMenu(true)
         return binding.root
     }
 
@@ -79,5 +80,18 @@ class ShoeListFragment : Fragment() {
             layout.addView(textViewSize)
             binding.myRoot.addView(layout)
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        super.onCreateOptionsMenu(menu, inflater)
+        inflater.inflate(R.menu.menu, menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == R.id.loginScreenMenu) {
+            val intent = Intent(activity, Main::class.java)
+            activity?.startActivity(intent)
+        }
+        return true
     }
 }
