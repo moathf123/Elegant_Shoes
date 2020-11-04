@@ -1,6 +1,5 @@
 package com.example.elegantshoes.models
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.*
 import android.widget.ImageView
@@ -10,10 +9,11 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
+import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.ui.NavigationUI
 import com.example.elegantshoes.R
 import com.example.elegantshoes.databinding.FragmentShoeListBinding
-import kotlinx.coroutines.Dispatchers.Main
 import timber.log.Timber.i
 
 
@@ -88,10 +88,8 @@ class ShoeListFragment : Fragment() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (item.itemId == R.id.loginScreenMenu) {
-            val intent = Intent(activity, Main::class.java)
-            activity?.startActivity(intent)
-        }
-        return true
+        return NavigationUI.onNavDestinationSelected(item, requireView().findNavController())
+                || super.onOptionsItemSelected(item)
+
     }
 }
