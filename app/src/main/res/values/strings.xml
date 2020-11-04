@@ -24,5 +24,7 @@
     <string name="shoes_name">Shoes Name:</string>
     <string name="save">Save</string>
     <string name="cancel">Cancel</string>
+    <string name="instruction_first">So by pressing the upper corner button you can add a new shoe</string>
+    <string name="instruction_second">in detail add shoe item when you click save it will save it or click cancel to ignore</string>
 
 </resources>

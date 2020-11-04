@@ -54,7 +54,6 @@ class ShoeListFragment : Fragment() {
         return binding.root
     }
 
-
     private fun createItemList() {
         for (item in viewModel.list) {
             layout = LinearLayout(this.context)
@@ -80,6 +79,5 @@ class ShoeListFragment : Fragment() {
             layout.addView(textViewSize)
             binding.myRoot.addView(layout)
         }
-
     }
 }

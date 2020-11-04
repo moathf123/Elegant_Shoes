@@ -26,13 +26,10 @@ class InstructionFragment : Fragment() {
             container,
             false
         )
-
         binding.button.setOnClickListener {
             it.findNavController()
                 .navigate(InstructionFragmentDirections.actionInstructionFragmentToShoeListFragment())
         }
-
         return binding.root
     }
-
 }

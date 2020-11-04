@@ -31,6 +31,4 @@ class WelcomeScreenFragment : Fragment() {
         }
         return binding.root
     }
-
-
 }

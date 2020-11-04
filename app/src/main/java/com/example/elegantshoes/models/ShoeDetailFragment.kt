@@ -34,7 +34,6 @@ class ShoeDetailFragment : Fragment() {
             viewModel.onSaveClicked()
             findNavController().navigate(ShoeDetailFragmentDirections.actionShoeDetailFragmentToShoeListFragment())
         }
-
         binding.buttonShoeDetailCancel.setOnClickListener {
             viewModel.onCancelClicked()
             findNavController().navigate(ShoeDetailFragmentDirections.actionShoeDetailFragmentToShoeListFragment())

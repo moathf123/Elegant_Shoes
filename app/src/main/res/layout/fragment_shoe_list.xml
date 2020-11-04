@@ -15,7 +15,6 @@
             android:layout_margin="@dimen/margin_all_16d"
             android:orientation="vertical">
 
-
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/fab"
                 android:layout_width="wrap_content"

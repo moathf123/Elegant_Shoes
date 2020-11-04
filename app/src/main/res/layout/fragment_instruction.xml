@@ -11,13 +11,12 @@
 
         <TextView
             style="@style/textStyle"
-            android:text="TODO" />
-        <!-- TODO add instruction texts -->
+            android:text="@string/instruction_first" />
 
         <TextView
             android:id="@+id/textView"
             style="@style/textStyle"
-            android:text="TODO" />
+            android:text="@string/instruction_second" />
 
         <Button
             android:id="@+id/button"

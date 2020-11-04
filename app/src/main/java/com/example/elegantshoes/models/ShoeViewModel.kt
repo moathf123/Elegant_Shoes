@@ -25,7 +25,6 @@ class ShoeViewModel : ViewModel() {
         _newItemBeenAdded.value = false
         _itemCanceled.value = false
     }
-
     fun onSaveClicked() {
         val shoe = Shoe(
             editTextName.value.toString(),
