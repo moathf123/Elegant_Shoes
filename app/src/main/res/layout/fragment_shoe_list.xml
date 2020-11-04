@@ -9,8 +9,10 @@
         tools:context=".models.ShoeListFragment">
 
         <LinearLayout
+            android:id="@+id/myRoot"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_all_16d"
             android:orientation="vertical">
 
 
@@ -22,13 +24,8 @@
                 android:layout_margin="16dp"
                 android:contentDescription="@string/next"
                 android:src="@drawable/abc_vector_test" />
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
         </LinearLayout>
-
     </ScrollView>
+
 
 </layout>
