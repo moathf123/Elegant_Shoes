@@ -25,19 +25,15 @@ class LoginFragment : Fragment() {
             container,
             false
         )
-
         binding.buttonLoginLogin.setOnClickListener {
             it.findNavController()
                 .navigate(LoginFragmentDirections.actionLoginFragmentToWelcomeScreenFragment())
-        }
 
+        }
         binding.buttonLoginSignUp.setOnClickListener {
             it.findNavController()
                 .navigate(LoginFragmentDirections.actionLoginFragmentToWelcomeScreenFragment())
         }
-
         return binding.root
     }
-
-
 }

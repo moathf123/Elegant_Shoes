@@ -20,4 +20,21 @@
         <item name="android:textColor">@color/brown</item>
         <item name="android:layout_marginBottom">@dimen/margin_all_16d</item>
     </style>
+
+    <style name="shoe_textLabel">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/brown</item>
+        <item name="android:textSize">@dimen/textSize_shoeDetail</item>
+        <item name="android:layout_marginStart">16dp</item>
+    </style>
+
+    <style name="editText_shoeDetail">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:ems">10</item>
+    </style>
 </resources>
